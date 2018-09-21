@@ -1,0 +1,74 @@
+//FUNCTIONS:
+Drive
+
+
+/*
+
+
+9/19 wrote psudocode functions and stuff
+
+*//*
+
+(naming conventions):
+
+drive_fr //Drive_ front right motor
+drive_fl //drive_ front left motor
+drive_br //drive_ back right motor
+drive_bl //drive_ back left motor
+
+stx = left stick x value
+sty = left stick y value
+
+*//*
+HOW MOTORS WILL WORK/BE CONTROLLED (mecanum)
+
+Basicly robot will move according to the left stick
+	Left stick up == drive forwards
+	Left stick down == drive backwards
+	Left stick right == shift right
+	Left stick left == shift left
+	(same for the diagonals, prog will be kinda weird but we’ll figure it out.
+
+	Turning (around an axis not just lateral movement)
+	Will use the triggers
+	Right trigger = turn right
+	Left trigger = turn left
+
+*/
+
+
+
+Functions:
+
+xymove(stx, sty) { //stick x value and stick y value (need to find the actual names from built in ftc class def)
+	If (stay within some_value of center) and (stx outside some_value of center) {
+	//side to side movement (abv ture if stick is not up or down)
+	Power drive_fl and drive_br = stx 
+	Power drive_fr and drive_bl = -stx
+} else if (stx within some_value of center) and (sty outside some_value of center) {
+	// forward/backward movement
+	Power all_motor = sty
+} else if (stx outside some_value of center) and (sty outside of some_value of center) {
+	//diagonal 
+	If stx > 0 and sty > 0 { //q1
+		Power drive_fl and drive_br = (stx + sty) /2
+	} else if stx < 0 and sty > 0 { //q2
+		Power drive_fr and drive_bl = (stx + sty) /2
+	} else if stx < 0 and sty < 0 { //q3
+		Power drive_fl and drive_br = -(stx + sty) /2
+	} else if stx > 0 and sty < 0 { //q4
+		Power drive_fr and drive_bl = -(stx + sty) /2
+	}
+} else If (right_trigger) {
+	//turn right
+	Power drive_left = speed
+	Power drive_right = -speed
+} else if (left_trigger ) {
+	//turn left
+	Power drive_right = speed
+	Power drive_left = -speed
+} else {
+	//nothing
+	Power all = 0
+}
+
