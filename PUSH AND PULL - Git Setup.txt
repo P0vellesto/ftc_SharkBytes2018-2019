@@ -1,4 +1,4 @@
-PUSH AND PULL
+giPUSH AND PULL
 All code you type is within the astriks, and make sure to not copy the space before the command.
 Because it might give you errors.
 
