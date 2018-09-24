@@ -19,8 +19,9 @@ Because it might give you errors.
 
             fatal: Not a git repository (or any of the parent directories): .git
 
+		!!! IMPORTANT: MAKE SURE LIVI IS NEXT TO YOU BEFORE YOU DO THIS STEP, IT CAN RUIN YOUR COMPUTER COMPLETELY. !!!
                 3.a.b. If it does return a bunch of stuff, run ** rm -rf .git **.
-                !!! IMPORTANT: MAKE SURE LIVI IS NEXT TO YOU BEFORE YOU DO THIS STEP, IT CAN RUIN YOUR COMPUTER COMPLETELY. !!!
+                
 
         3.b. Double check if there is no repository (repo)
 
