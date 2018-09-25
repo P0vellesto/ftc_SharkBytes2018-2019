@@ -5,7 +5,7 @@ TODO: check with build teams to see what motors will actually be used
 DIRECTIONS (names to use in code comments)
   robot forwards (the front of the robot)
   robot backwards (the back of the robot)
-  robot right (the right side of the robot, if facing robot forwarcds from robot backwards)
+  robot right (the right side of the robot, if facing robot forwards from robot backwards)
   robot left (other side of right)
 
 DRIVE MOTORS
