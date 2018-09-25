@@ -1,6 +1,5 @@
-giPUSH AND PULL
-All code you type is within the astriks, and make sure to not copy the space before the command.
-Because it might give you errors.
+git PUSH AND PULL
+All code you type is within the asterisks, and make sure to not copy the space before the command, because it might give you errors.
 
 0. Make sure you are in the ftc_SharkBytes2018-2019 local REPO
 
@@ -17,6 +16,3 @@ Because it might give you errors.
    ** git add -A **
    ** git commit -m "(replace your message)" **
    ** git push **
-
-
-
