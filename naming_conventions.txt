@@ -1,0 +1,27 @@
+#SharkBytes Naming Conventions
+TODO: check with build teams to see what motors will actually be used
+!!Please use the same names for all applications, including on the phone, etc!!
+
+DIRECTIONS (names to use in code comments)
+  robot forwards (the front of the robot)
+  robot backwards (the back of the robot)
+  robot right (the right side of the robot, if facing robot forwarcds from robot backwards)
+  robot left (other side of right)
+
+DRIVE MOTORS
+  mDrv_l //left drive motor, if facing robot forwards
+  mDrv_r //right drive motor, if facing robot forwards
+  
+INTAKE MOTOR(s)
+  mItk //intake motor
+  (mItk_l, mItk_r) //if there are more than one
+  
+CONVAYER MOTOR(s)
+  mCnv_l //convayer lower motor, if there are two
+  mCnv_u //convayer upper motor, if there are two
+  
+ARM SERVOS //for placing team marker? if that is the mech that we choose to use
+  sArm_0
+  sArm_1
+  etc...
+ 
