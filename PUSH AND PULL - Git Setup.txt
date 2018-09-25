@@ -1,22 +1,18 @@
-giPUSH AND PULL
-All code you type is within the astriks, and make sure to not copy the space before the command.
-Because it might give you errors.
+]git PUSH AND PULL
+All code you type is within the asterisks, and make sure to not copy the space before the command, because it might give you errors.
 
 0. Make sure you are in the ftc_SharkBytes2018-2019 local REPO
 
 1. Make sure you have new files to upload
 
-   ** git status **
+   ** git pull **
 
 2. Make sure you the updated local REPO
 
-   ** git pull **
+   ** git status **
 
 3. When you have the most updated REPO, then go ahead and push your commit
 
    ** git add -A **
    ** git commit -m "(replace your message)" **
    ** git push **
-
-
-
