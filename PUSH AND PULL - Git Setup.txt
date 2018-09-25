@@ -1,4 +1,4 @@
-git PUSH AND PULL
+]git PUSH AND PULL
 All code you type is within the asterisks, and make sure to not copy the space before the command, because it might give you errors.
 
 0. Make sure you are in the ftc_SharkBytes2018-2019 local REPO

@@ -1,2 +1,0 @@
-muahahaha
-w test.txt
