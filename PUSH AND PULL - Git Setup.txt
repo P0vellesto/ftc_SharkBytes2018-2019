@@ -5,11 +5,11 @@ All code you type is within the asterisks, and make sure to not copy the space b
 
 1. Make sure you have new files to upload
 
-   ** git status **
+   ** git pull **
 
 2. Make sure you the updated local REPO
 
-   ** git pull **
+   ** git status **
 
 3. When you have the most updated REPO, then go ahead and push your commit
 
