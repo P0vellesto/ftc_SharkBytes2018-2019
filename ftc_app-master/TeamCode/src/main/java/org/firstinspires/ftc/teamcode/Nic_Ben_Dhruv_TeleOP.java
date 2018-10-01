@@ -1,4 +1,21 @@
 package org.firstinspires.ftc.teamcode;
 
-public class Nic_Ben_Dhruv_TeleOP {
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+@TeleOp(name = "Tele")
+public class Nick_Tele_Op extends LinearOpMode
+{
+
+    @Override
+    public void runopmode() throws InterruptedException
+    {
+
+
+        waitForStart();
+
+        while(opModeIsActive())
+        {
+
+            idle();
+        }
+    }
 }
