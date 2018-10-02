@@ -4,7 +4,7 @@
 // and you hold be to make it go back.
 // The speed the servo turns when held will most
 // likely ber changed later after testing.
-// This code most likely needs to be debugged.
+// This code needs to be debugged.
 
 package org.firstinspires.ftc.teamcode;
 
@@ -19,15 +19,15 @@ public class Nick_Tele_Op extends LinearOpMode
     private DcMotor motorLeft;
     private DcMotor motorRight;
 
-    private Servo bucket_plop;
+    private Servo armServo;
 
-    @Override
+   // @Override
     public void runopmode() throws InterruptedException
     {
         motorLeft = hardwareMap.dcMotor.get("motorLeft");
         motorRight = hardwareMap.dcMotor.get("motorRight");
 
-        motorLeft.setDirection(DcMotor.Direction.REVERSE);
+      //  motorLeft.setDirection(DcMotor.Direction.REVERSE);
 
         armServo = hardwareMap.servo.get("bucket_plop");
 
