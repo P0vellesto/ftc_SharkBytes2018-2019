@@ -29,7 +29,7 @@ public class Nick_Tele_Op extends LinearOpMode
 
       //  motorLeft.setDirection(DcMotor.Direction.REVERSE);
 
-        armServo = hardwareMap.servo.get("bucket_plop");
+        armServo = hardwareMap.servo.get("armServo");
 
         waitForStart();
 
