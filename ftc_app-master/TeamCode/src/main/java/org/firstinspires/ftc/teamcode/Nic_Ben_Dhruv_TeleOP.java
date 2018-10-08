@@ -14,22 +14,21 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
 
 @TeleOp(name = "Tele")
-public class Nick_Tele_Op extends LinearOpMode
+public class Nic_Ben_Dhruv_TeleOP extends LinearOpMode
 {
-    private DcMotor motorLeft;
-    private DcMotor motorRight;
+    public DcMotor motorLeft;
+    public DcMotor motorRight;
+    public Servo armServo;
 
-    private Servo armServo;
-
-   // @Override
-    public void runopmode() throws InterruptedException
+    @Override
+    public void runOpMode() throws InterruptedException
     {
         motorLeft = hardwareMap.dcMotor.get("motorLeft");
         motorRight = hardwareMap.dcMotor.get("motorRight");
 
-      //  motorLeft.setDirection(DcMotor.Direction.REVERSE);
+        motorLeft.setDirection(DcMotor.Direction.REVERSE);
 
-        armServo = hardwareMap.servo.get("bucket_plop");
+        armServo = hardwareMap.servo.get("armServo");
 
         waitForStart();
 
