@@ -14,7 +14,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
 
 @TeleOp(name = "Tele")
-public class Nick_Tele_Op extends LinearOpMode
+public class Nic_Ben_Dhruv_TeleOP extends LinearOpMode
 {
     public DcMotor motorLeft;
     public DcMotor motorRight;
