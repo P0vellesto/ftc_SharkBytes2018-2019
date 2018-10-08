@@ -13,7 +13,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
 
-@TeleOp(name = "Tele")
+@TeleOp(name = "Nicholas Tele Op", group="TeleOpmode")
 public class Nic_Ben_Dhruv_TeleOP extends LinearOpMode
 {
     public DcMotor motorLeft;

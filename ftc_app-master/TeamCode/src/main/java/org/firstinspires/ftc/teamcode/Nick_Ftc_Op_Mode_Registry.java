@@ -31,7 +31,5 @@ public class Nick_Ftc_Op_Mode_Registry implements OpModeRegister {
      * @see com.qualcomm.robotcore.eventloop.opmode.TeleOp
      * @see com.qualcomm.robotcore.eventloop.opmode.Autonomous
      */
-    manager.register("FlyNTeleOp", FlyNTeleOp.class);
-    manager.register("Nick_Tele_Op", Nick_Tele_Op.class);
-  //  manager.register("Nick_Tele_Op2", Nick_Tele_Op2.class);
+    manager.register("Nicholas Tele Op", Nic_Ben_Dhruv_TeleOP.class);
 }
