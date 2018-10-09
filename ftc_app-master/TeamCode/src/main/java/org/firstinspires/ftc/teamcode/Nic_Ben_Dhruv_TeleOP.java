@@ -31,7 +31,7 @@ public class Nic_Ben_Dhruv_TeleOP extends LinearOpMode
 
         sArm_0 = hardwareMap.servo.get("armServo");
 
-        waitForStart();
+        2
 
         while(opModeIsActive())
         {
