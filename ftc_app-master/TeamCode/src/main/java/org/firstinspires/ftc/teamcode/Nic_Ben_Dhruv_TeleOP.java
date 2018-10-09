@@ -12,40 +12,40 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
-
+//hi
 @TeleOp(name = "Nicholas Tele Op", group="TeleOpmode")
 public class Nic_Ben_Dhruv_TeleOP extends LinearOpMode
 {
-    public DcMotor motorLeft;
-    public DcMotor motorRight;
-    public Servo armServo;
+    public DcMotor mDrv_l; //Left motor
+    public DcMotor mDrv_r; //Right motor
+    public Servo sArm_0; //Arm servo the lifts bucket with silver and gold
 
     @Override
     //@Disabled
     public void runOpMode() throws InterruptedException
     {
-        motorLeft = hardwareMap.dcMotor.get("motorLeft");
-        motorRight = hardwareMap.dcMotor.get("motorRight");
+        mDrv_l = hardwareMap.dcMotor.get("mDrv_l");
+        mDrv_r = hardwareMap.dcMotor.get("mDrv_r");
 
-        motorLeft.setDirection(DcMotor.Direction.REVERSE);
+        mDrv_l.setDirection(DcMotor.Direction.REVERSE); //Most robots have one motor backwards
 
-        armServo = hardwareMap.servo.get("armServo");
+        sArm_0 = hardwareMap.servo.get("armServo");
 
         waitForStart();
 
         while(opModeIsActive())
         {
-            motorLeft.setPower(-gamepad1.left_stick_y);
-            motorRight.setPower(-gamepad1.right_stick_y);
+            mDrv_l.setPower(-gamepad1.left_stick_y);
+            mDrv_r.setPower(-gamepad1.right_stick_y);
 
             if(gamepad2.a)
             {
-                armServo.setPosition(+ 0.01);
+                sArm_0.setPosition(+ 0.01);
             }
 
             if(gamepad2.b)
             {
-                armServo.setPosition(- 0.01);
+                sArm_0.setPosition(- 0.01);
             }
 
             idle();
