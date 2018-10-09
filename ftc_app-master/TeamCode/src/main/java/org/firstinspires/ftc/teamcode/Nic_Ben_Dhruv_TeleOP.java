@@ -18,7 +18,7 @@ public class Nic_Ben_Dhruv_TeleOP extends LinearOpMode
 {
     public DcMotor mDrv_l; //Left motor
     public DcMotor mDrv_r; //Right motor
-    public Servo sArm_0; //Arm servo the lifts bucket with silver and gold
+    public Servo sArm_0; //Arm servo that lifts bucket with silver and gold
 
     @Override
     //@Disabled
