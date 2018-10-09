@@ -21,6 +21,7 @@ public class Nic_Ben_Dhruv_TeleOP extends LinearOpMode
     public Servo armServo;
 
     @Override
+    //@Disabled
     public void runOpMode() throws InterruptedException
     {
         motorLeft = hardwareMap.dcMotor.get("motorLeft");

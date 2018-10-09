@@ -1,3 +1,5 @@
+/*
+DO NOT UNCOMMENT THIS CODE IS NOT GONNA BE USED
 package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -39,3 +41,4 @@ public class FlyNTeleOp extends LinearOpMode {
         }
     }
 }
+*/

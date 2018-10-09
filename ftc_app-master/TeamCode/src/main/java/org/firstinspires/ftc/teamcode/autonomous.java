@@ -49,7 +49,7 @@ public class auto extends LinearOpMode
             power = 1;
         }
         turnPower(power); //start turning
-        Thread.sleep(turnModifier * power) //we multiply by power because if the power is lower then the bot will be turning slower so we need to wait longer
+        Thread.sleep(turnModifier * power); //we multiply by power because if the power is lower then the bot will be turning slower so we need to wait longer
         turnPower(0); //stop turning
     }
 
