@@ -1,5 +1,5 @@
 Git Hub Set Up Guide
-All code you type is within the astriks, and make sure to not copy the space before the command.
+All code you type is within the asterixs, and make sure to not copy the space before the command.
 Because it might give you errors.
 
 
