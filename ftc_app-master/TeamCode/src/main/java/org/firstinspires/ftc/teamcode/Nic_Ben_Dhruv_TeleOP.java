@@ -32,8 +32,8 @@ public class Nic_Ben_Dhruv_TeleOP extends LinearOpMode
         mDrv_r = hardwareMap.dcMotor.get("mDrv_r");
         mDrv_l2 = hardwareMap.dcMotor.get("mDrv_l2");
         mDrv_r2 = hardwareMap.dcMotor.get("mDrv_r2");
-        mPinion = hardwareMap.dcMotor.get("mLinion");
-        mIntake = hardwareMap.dcMotor.get("mRIntake");
+        mPinion = hardwareMap.dcMotor.get("mLPinion");
+        //mIntake = hardwareMap.dcMotor.get("mRIntake"); - we don't need this cuz we only have 5 motors
 =
         mDrv_l.setDirection(DcMotor.Direction.REVERSE); //Most robots have one motor backwards
         mDrv_l2.setDirection(DcMotor.Direction.REVERSE); //Most robots have one motor backwards
@@ -46,8 +46,8 @@ public class Nic_Ben_Dhruv_TeleOP extends LinearOpMode
             mDrv_r.setPower(-gamepad1.right_stick_y);
             mDrv_l2.setPower(-gamepad1.left_stick_y);
             mDrv_r2.setPower(-gamepad1.right_stick_y);
-            mLPinion.setPower(-gamepad2.left_stick_y);
-            mRIntake.setPower(-gamepad2.right_stick_y);
+            mLPinion.setPower(-gamepad2.right_trigger);
+            mRIntake.setPower(-gamepad2.left_trigger);
 
             idle();
         }
