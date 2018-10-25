@@ -63,7 +63,7 @@ eg: State machine coding, or a User Menu system, and not combine them into a sin
 sample.  This will prevent an “all inclusive” Sample being deleted just because one part of it
 becomes obsolete.
 
-### Device Configuration Names
+### Device Configuration Names IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 The following device names are used in the external samples
  
