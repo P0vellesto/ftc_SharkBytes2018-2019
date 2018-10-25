@@ -32,9 +32,9 @@ public class Nic_Ben_Dhruv_TeleOP extends LinearOpMode
         mDrv_r = hardwareMap.dcMotor.get("mDrv_r");
         mDrv_l2 = hardwareMap.dcMotor.get("mDrv_l2");
         mDrv_r2 = hardwareMap.dcMotor.get("mDrv_r2");
-        mPinion = hardwareMap.dcMotor.get("mLinion");
-        mIntake = hardwareMap.dcMotor.get("mRIntake");
-=
+        mLPinion = hardwareMap.dcMotor.get("mLPinion");
+        mRIntake = hardwareMap.dcMotor.get("mRIntake");
+
         mDrv_l.setDirection(DcMotor.Direction.REVERSE); //Most robots have one motor backwards
         mDrv_l2.setDirection(DcMotor.Direction.REVERSE); //Most robots have one motor backwards
 
