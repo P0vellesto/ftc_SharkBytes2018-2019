@@ -51,9 +51,9 @@ import org.firstinspires.ftc.robotcontroller.external.samples.HardwarePushbot;
  * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list
  */
 
-@TeleOp(name="motor_servo_test")
+@TeleOp(name="motor_test")
 //@Disabled
-public class motor_servo_test extends OpMode{
+public class motor_test extends OpMode{
 
     /* Declare OpMode members. */
     HardwarePushbot robot       = new HardwarePushbot(); // use the class created to define a Pushbot's hardware
