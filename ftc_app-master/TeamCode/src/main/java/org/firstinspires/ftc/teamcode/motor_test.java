@@ -98,11 +98,14 @@ public class motor_test extends OpMode{
         double right;
 
         // Run wheels in tank mode (note: The joystick goes negative when pushed forwards, so negate it)
+
         left = -gamepad1.left_stick_y;
         right = -gamepad1.right_stick_y;
 
-        robot.leftDrive.setPower(left);
-        robot.rightDrive.setPower(right);
+        power(left, right);
+        // Instead of using the two lines of code below, you can just use my method.
+        //robot.leftDrive.setPower(left);
+        //robot.rightDrive.setPower(right);
 
         // Use gamepad left & right Bumpers to open and close the claw
         if (gamepad1.right_bumper)
@@ -130,9 +133,40 @@ public class motor_test extends OpMode{
     }
 
     /*
+    The following code is for autonomous and teleop. For forward_backwards, put in a negative value to go backwards.
+    For the rest do a positive value.
+    */
+
+    //@Override
+    public void forward_backwards(double power)
+    {
+        robot.leftDrive.setPower(power);
+        robot.rightDrive.setPower(power);
+    }
+
+    //@Override
+    public void left(double power)
+    {
+        robot.leftDrive.setPower(power);
+        robot.rightDrive.setPower(-power);
+    }
+    //@Override
+    public void right(double power)
+    {
+        robot.leftDrive.setPower(-power);
+        robot.rightDrive.setPower(power);
+    }
+    //Override
+    public void power(double leftPower, double rightPower)
+    {
+        robot.leftDrive.setPower(leftPower);
+        robot.rightDrive.setPower(rightPower);
+    }
+    /*
      * Code to run ONCE after the driver hits STOP
      */
     @Override
     public void stop() {
     }
+
 }
