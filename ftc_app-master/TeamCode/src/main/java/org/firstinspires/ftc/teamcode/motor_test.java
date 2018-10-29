@@ -92,6 +92,36 @@ public class motor_test extends OpMode{
     /*
      * Code to run REPEATEDLY after the driver hits PLAY but before they hit STOP
      */
+    /*
+    The following code is for autonomous and teleop. For forward_backwards, put in a negative value to go backwards.
+    For the rest do a positive value.
+    */
+
+    //@Override
+    public void forward_backwards(double power)
+    {
+        robot.leftDrive.setPower(power);
+        robot.rightDrive.setPower(power);
+    }
+
+    //@Override
+    public void left(double power)
+    {
+        robot.leftDrive.setPower(power);
+        robot.rightDrive.setPower(-power);
+    }
+    //@Override
+    public void right(double power)
+    {
+        robot.leftDrive.setPower(-power);
+        robot.rightDrive.setPower(power);
+    }
+    //Override
+    public void power(double leftPower, double rightPower)
+    {
+        robot.leftDrive.setPower(leftPower);
+        robot.rightDrive.setPower(rightPower);
+    }
     @Override
     public void loop() {
         double left;
@@ -132,36 +162,7 @@ public class motor_test extends OpMode{
         telemetry.addData("right", "%.2f", right);
     }
 
-    /*
-    The following code is for autonomous and teleop. For forward_backwards, put in a negative value to go backwards.
-    For the rest do a positive value.
-    */
 
-    //@Override
-    public void forward_backwards(double power)
-    {
-        robot.leftDrive.setPower(power);
-        robot.rightDrive.setPower(power);
-    }
-
-    //@Override
-    public void left(double power)
-    {
-        robot.leftDrive.setPower(power);
-        robot.rightDrive.setPower(-power);
-    }
-    //@Override
-    public void right(double power)
-    {
-        robot.leftDrive.setPower(-power);
-        robot.rightDrive.setPower(power);
-    }
-    //Override
-    public void power(double leftPower, double rightPower)
-    {
-        robot.leftDrive.setPower(leftPower);
-        robot.rightDrive.setPower(rightPower);
-    }
     /*
      * Code to run ONCE after the driver hits STOP
      */
