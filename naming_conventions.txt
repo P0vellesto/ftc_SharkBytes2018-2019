@@ -9,8 +9,10 @@ DIRECTIONS (names to use in code comments)
   robot left (other side of right)
 
 DRIVE MOTORS
-  mDrv_l //left drive motor, if facing robot forwards
-  mDrv_r //right drive motor, if facing robot forwards
+  mDrv_l0 // front left drive motor, if facing robot forwards
+  mDrv_l1 // back left drive motor, if facing robot forwards
+  mDrv_r0 // front right drive motor, if facing robot forwards
+  mDrv_r1 // back right drive motor, if facing robot forwards
   
 INTAKE MOTOR(s)
   mItk //intake motor
