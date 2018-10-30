@@ -97,11 +97,11 @@ public class motor_test extends OpMode{
     All the commented code is for the actual robot. The uncommented is for the motor test.
     For the actual robot, uncomment the commented stuff in the function,
     and delete the two lines of code for motor test.
-    Code for the servo for the ramp must be written.
+    Code for the arm and box parrelel math thingy needs to be written.
     */
 
     //Override
-    public void power(double leftPower, double rightPower/*, double pinionPower, double intakePower*/)
+    public void power(double leftPower, double rightPower/*, double pinionPower, double intakePower, double boxPower, double armPower*/)
     {
         robot.leftDrive.setPower(leftPower);
         robot.rightDrive.setPower(rightPower);
@@ -120,19 +120,26 @@ public class motor_test extends OpMode{
         double right;
         double pinion;
         double intake;
+        double box;
 
         // Run wheels in tank mode (note: The joystick goes negative when pushed forwards, so negate it)
 
         left = -gamepad1.left_stick_y;
         right = -gamepad1.right_stick_y;
+        pinion = -gamepad2.left_stick_y;
+        intake = -gamepad2.left_stick_x;
+        box = -gamepad2.right_stick_x;
 
         //uncomment pinion and intake when used for the actual robot
-        power(left, right/*, pinion, intake*/);
+
+        power(left, right/*, pinion, intake, box*/);
+
         // Instead of using the two lines of code below, you can just use my method.
         //robot.leftDrive.setPower(left);
         //robot.rightDrive.setPower(right);
 
         // Use gamepad left & right Bumpers to open and close the claw
+
         if (gamepad1.right_bumper)
             clawOffset += CLAW_SPEED;
         else if (gamepad1.left_bumper)
