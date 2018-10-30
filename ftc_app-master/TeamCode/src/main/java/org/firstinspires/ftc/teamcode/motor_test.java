@@ -118,13 +118,16 @@ public class motor_test extends OpMode{
     public void loop() {
         double left;
         double right;
+        double pinion;
+        double intake;
 
         // Run wheels in tank mode (note: The joystick goes negative when pushed forwards, so negate it)
 
         left = -gamepad1.left_stick_y;
         right = -gamepad1.right_stick_y;
 
-        power(left, right);
+        //uncomment pinion and intake when used for the actual robot
+        power(left, right/*, pinion, intake*/);
         // Instead of using the two lines of code below, you can just use my method.
         //robot.leftDrive.setPower(left);
         //robot.rightDrive.setPower(right);
