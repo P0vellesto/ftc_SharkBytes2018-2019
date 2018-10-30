@@ -93,34 +93,26 @@ public class motor_test extends OpMode{
      * Code to run REPEATEDLY after the driver hits PLAY but before they hit STOP
      */
     /*
-    The following code is for autonomous and teleop. For forward_backwards, put in a negative value to go backwards.
-    For the rest do a positive value.
+    The following code is for autonomous and teleop.
+    All the commented code is for the actual robot. The uncommented is for the motor test.
+    For the actual robot, uncomment the commented stuff in the function,
+    and delete the two lines of code for motor test.
+    Code for the servo for the ramp must be written.
     */
 
-    //@Override
-    public void forward_backwards(double power)
-    {
-        robot.leftDrive.setPower(power);
-        robot.rightDrive.setPower(power);
-    }
-
-    //@Override
-    public void left(double power)
-    {
-        robot.leftDrive.setPower(power);
-        robot.rightDrive.setPower(-power);
-    }
-    //@Override
-    public void right(double power)
-    {
-        robot.leftDrive.setPower(-power);
-        robot.rightDrive.setPower(power);
-    }
     //Override
-    public void power(double leftPower, double rightPower)
+    public void power(double leftPower, double rightPower/*, double pinionPower, double intakePower*/)
     {
         robot.leftDrive.setPower(leftPower);
         robot.rightDrive.setPower(rightPower);
+        /*
+        mDrv_r0.setPower(rightPower);
+        mDrv_r1.setPower(rightPower);
+        mDrv_l0.setPower(leftPower);
+        mDrv_l1.setPower(leftPower);
+        mPin.setPower(pinionPower);
+        mItk.setPower(intakePower);
+        */
     }
     @Override
     public void loop() {
