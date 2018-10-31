@@ -105,6 +105,7 @@ public class motor_test extends OpMode{
     {
         robot.leftDrive.setPower(leftPower);
         robot.rightDrive.setPower(rightPower);
+
         /*
         mDrv_r0.setPower(rightPower);
         mDrv_r1.setPower(rightPower);
@@ -112,6 +113,20 @@ public class motor_test extends OpMode{
         mDrv_l1.setPower(leftPower);
         mPin.setPower(pinionPower);
         mItk.setPower(intakePower);
+        sArm.setPower(armPower);
+        //I dunno if this works. sBox.getPowerFloat(); is something you can do, but i dunno how to work that.
+        if (!sBoxPower = 0)
+        {
+            sBox.setPower(boxPower);
+        }
+        else if (!sArm = 0)
+        {
+            sBox.setPower(-armPower);
+        }
+        else
+        {
+            sBox.setPower(0);
+        }
         */
     }
     @Override
@@ -121,6 +136,7 @@ public class motor_test extends OpMode{
         double pinion;
         double intake;
         double box;
+        double arm;
 
         // Run wheels in tank mode (note: The joystick goes negative when pushed forwards, so negate it)
 
@@ -129,10 +145,11 @@ public class motor_test extends OpMode{
         pinion = -gamepad2.left_stick_y;
         intake = -gamepad2.left_stick_x;
         box = -gamepad2.right_stick_x;
+        arm = -gamepad2.right_stick_y;
 
         //uncomment pinion and intake when used for the actual robot
 
-        power(left, right/*, pinion, intake, box*/);
+        power(left, right/*, pinion, intake, box, arm*/);
 
         // Instead of using the two lines of code below, you can just use my method.
         //robot.leftDrive.setPower(left);
