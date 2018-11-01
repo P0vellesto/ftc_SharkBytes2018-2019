@@ -29,9 +29,11 @@
 
 package org.firstinspires.ftc.teamcode;
 
+import com.qualcomm.ftccommon.configuration.EditServoListActivity;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.Range;
 
 import org.firstinspires.ftc.robotcontroller.external.samples.HardwarePushbot;
@@ -96,7 +98,7 @@ public class motor_test extends OpMode{
     All the commented code is for the actual robot. The uncommented is for the motor test.
     For the actual robot, uncomment the commented stuff in the function,
     and delete the two lines of code for motor test.
-    Code for the arm and box parrelel math thingy needs to be written.
+    My servo code needs to be checked.
     */
 
     //Override
@@ -104,28 +106,49 @@ public class motor_test extends OpMode{
     {
         robot.leftDrive.setPower(leftPower);
         robot.rightDrive.setPower(rightPower);
-
         /*
+        //This int check is declared and is used the check whether the box is manually turned or not. If it is manually turned, it = 1.
+        //Otherwise, it = 0.
+        int check;
+        check = 0;
         mDrv_r0.setPower(rightPower);
         mDrv_r1.setPower(rightPower);
         mDrv_l0.setPower(leftPower);
         mDrv_l1.setPower(leftPower);
         mPin.setPower(pinionPower);
         mItk.setPower(intakePower);
-        sArm.setPower(armPower);
+
         //I dunno if this works. sBox.getPowerFloat(); is something you can do, but i dunno how to work that.
-        if (!sBoxPower = 0)
+
+        if (boxPower > 10)
         {
-            sBox.setPower(boxPower);
+            sBox.setDirection(Servo.Direction.FORWARD);
+            check = 1;
         }
-        else if (!sArm = 0)
+        else if (boxPower < -10)
         {
-            sBox.setPower(-armPower);
+            sBox.setDirection(Servo.Direction.REVERSE);
+            check = 1;
         }
-        else
+
+        if (armPower > 10)
         {
-            sBox.setPower(0);
+            sArm.setDirection(Servo.Direction.FORWARD);
+            if (!check = 1)
+            {
+                sBox.setDirection(Servo.Direction.REVERSE);
+            }
         }
+        else if (armPower < -10)
+        {
+            sArm.setDirection(Servo.Direction.REVERSE);
+            if (!check =1)
+            {
+                sBox.setDirection(Servo.Direction.FORWARD);
+            }
+        }
+
+
         */
     }
     @Override
@@ -143,8 +166,8 @@ public class motor_test extends OpMode{
         right = -gamepad1.right_stick_y;
         pinion = -gamepad2.left_stick_y;
         intake = -gamepad2.left_stick_x;
-        box = -gamepad2.right_stick_x;
-        arm = -gamepad2.right_stick_y;
+        box = -gamepad2.right_stick_x * 10;
+        arm = -gamepad2.right_stick_y * 10;
 
         //uncomment pinion and intake when used for the actual robot
 
