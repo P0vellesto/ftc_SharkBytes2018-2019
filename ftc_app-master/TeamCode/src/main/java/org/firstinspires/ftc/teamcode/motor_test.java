@@ -134,7 +134,8 @@ public class motor_test extends OpMode{
         if (armPower > 10)
         {
             sArm.setDirection(Servo.Direction.FORWARD);
-            if (!check = 1)
+            if (!(check == 1))
+            if (!(check == 1))
             {
                 sBox.setDirection(Servo.Direction.REVERSE);
             }
@@ -142,7 +143,7 @@ public class motor_test extends OpMode{
         else if (armPower < -10)
         {
             sArm.setDirection(Servo.Direction.REVERSE);
-            if (!check =1)
+            if (!(check == 1))
             {
                 sBox.setDirection(Servo.Direction.FORWARD);
             }
