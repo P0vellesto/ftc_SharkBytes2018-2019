@@ -119,7 +119,6 @@ public class motor_test extends OpMode{
         mItk.setPower(intakePower);
 
         //I dunno if this works. sBox.getPowerFloat(); is something you can do, but i dunno how to work that.
-
         if (boxPower > 10)
         {
             sBox.setDirection(Servo.Direction.FORWARD);
