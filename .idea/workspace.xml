@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7030aef-9e06-420d-8a1f-95ede8218f78" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/ftc_app-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Autonomous_Test.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/ftc_SharkBytes2018-2019.iml" afterPath="$PROJECT_DIR$/.idea/ftc_SharkBytes2018-2019.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ftc_app-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/motor_test.java" afterPath="$PROJECT_DIR$/ftc_app-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/motor_test.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,9 +44,21 @@
       <file leaf-file-name="motor_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ftc_app-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/motor_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-122">
+            <state relative-caret-position="1298">
               <caret line="121" column="26" lean-forward="true" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicOpMode_Iterative.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ftc_app-master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Iterative.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-732">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#5837#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -551,9 +560,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ftc_app-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/motor_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-122">
+        <state relative-caret-position="1298">
           <caret line="121" column="26" lean-forward="true" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ftc_app-master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Iterative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-732">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#5837#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
