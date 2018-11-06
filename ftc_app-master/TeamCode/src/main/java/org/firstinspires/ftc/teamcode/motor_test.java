@@ -59,7 +59,7 @@ public class motor_test extends OpMode{
 
     /* Declare OpMode members. */
     HardwarePushbot robot       = new HardwarePushbot();// use the class created to define a Pushbot's hardware
-                                                         // could also use HardwarePushbotMatrix class.
+    // could also use HardwarePushbotMatrix class.
     double          clawOffset  = 0.0 ;                  // Servo mid position
     final double    CLAW_SPEED  = 0.02 ;                 // sets rate to move servo
     /*
@@ -106,6 +106,7 @@ public class motor_test extends OpMode{
     {
         robot.leftDrive.setPower(leftPower);
         robot.rightDrive.setPower(rightPower);
+
         /*
         //This int check is declared and is used the check whether the box is manually turned or not. If it is manually turned, it = 1.
         //Otherwise, it = 0.
@@ -120,15 +121,14 @@ public class motor_test extends OpMode{
 
         //I dunno if this works. sBox.getPowerFloat(); is something you can do, but i dunno how to work that.
 
-        if (boxPower > 10)
+        if (box.getPower() > 10)
         {
             sBox.setDirection(Servo.Direction.FORWARD);
             check = 1;
         }
-        else if (boxPower < -10)
+        else if (box.getPower() < -10)
         {
             sBox.setDirection(Servo.Direction.REVERSE);
-            check = 1;
         }
 
         if (armPower > 10)
@@ -200,8 +200,8 @@ public class motor_test extends OpMode{
 
         // Send telemetry message to signify robot running;
         telemetry.addData("claw",  "Offset = %.2f", clawOffset);
-        telemetry.addData("left",  "%.2f", left);
-        telemetry.addData("right", "%.2f", right);
+        // telemetry.addData("left",  "%.2f", left);
+        // telemetry.addData("right", "%.2f", right);
     }
 
 
